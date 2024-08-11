@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>Todo List</h1>
+  <br><br>
+
+  <!-- <form >
+    <input type="text" #box placeholder="Enter Your Task" formControl required><br><br>
+  
+  <button (click)="addTask(box.value)" >Add Task</button>
+  <ul *ngFor="let item of list">
+    <li>{{item.name}}<button (click)="removeTask(item.id)" class="btn">Remove Task</button></li>
+  </ul>
+</form> -->
+
+<form [formGroup]="taskForm" >
+  <input type="text" #box name="task" placeholder="Enter Your Task" formControlName="task" ><br><br>
+
+  <button (click)="addTask(box.value)" [disabled]="taskForm.invalid">Add Task</button>
+<ul *ngFor="let item of list">
+  <li>{{item.name}}<button (click)="removeTask(item.id)" class="btn">Remove Task</button></li>
+</ul>
+</form>
+</div>
+
+<!-- &nbsp; -->

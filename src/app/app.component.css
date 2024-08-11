@@ -1,0 +1,38 @@
+*{
+    background-image: linear-gradient(to right,#ffb0e9,#fff);
+}
+.container {
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    border: 2px solid black;
+    border-style: inset;
+    border-radius: 15px 50px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+h1{
+    text-align: center;   
+}
+
+input{
+    border-radius: 12px;
+    height: 20px;
+    width: 160px;
+}
+
+button{
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.btn {
+    margin-top: 10px;
+    width: 29%;
+    margin-right: 100px;
+    height:25px;
+    overflow:auto;
+    position: -webkit-sticky; 
+    position: sticky;
+}
